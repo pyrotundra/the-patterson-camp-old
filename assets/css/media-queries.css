@@ -1,4 +1,5 @@
-@media (min-width: 800px) {
+/* * Navigation styling for laptops and larger */
+@media (min-width: 860px) {
 	.header li {
 		float: left;
 	}
@@ -17,9 +18,59 @@
 	}
 }
 
-@media (max-width: 800px) {
+/* * Navigation styling in tablets or smaller */
+@media (max-width: 860px) {
+	/* Logo font size change to fit navbar on mobile */
 	.header .logo {
 		font-size: 1.5em;
 		padding: 15px 20px 15px 20px;
+	}
+
+	/* Navigation transiton omitted on mobile */
+	.header ul a,
+	.header ul a:hover {
+		transition: none;
+	}
+}
+
+/* *Iframe styling */
+@media (max-width: 860px) {
+	iframe {
+		width: 600px;
+		height: 550px;
+		align-self: center;
+		border: none;
+	}
+}
+@media (max-width: 630px) {
+	iframe {
+		width: 450px;
+		height: 400px;
+		align-self: center;
+		border: none;
+	}
+}
+@media (max-width: 450px) {
+	iframe {
+		width: 400px;
+		height: 350px;
+		align-self: center;
+		border: none;
+	}
+}
+@media (max-width: 380px) {
+	iframe {
+		width: 350px;
+		height: 300px;
+		align-self: center;
+		border: none;
+	}
+}
+@media (max-width: 360px) {
+	iframe {
+		width: 300px;
+		height: 250px;
+		align-self: center;
+		border: none;
 	}
 }

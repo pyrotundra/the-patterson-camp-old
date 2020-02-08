@@ -1,3 +1,8 @@
+/* Smooth Scroll */
+html {
+	scroll-behavior: smooth;
+}
+
 /* Setting the font family and styling defaults */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +137,6 @@ body {
 .showcase-container {
 	align-content: center;
 }
-
 /* Hide the images by default */
 .mySlides {
 	display: none;
@@ -169,3 +173,8 @@ body {
 }
 
 /* Availability Section */
+
+.availability-container {
+	display: grid;
+	justify-content: center;
+}
