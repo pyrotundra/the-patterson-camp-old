@@ -1,0 +1,171 @@
+/* Setting the font family and styling defaults */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1b231d;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation Styling */
+/* Link text color to white */
+.header a {
+	color: white;
+}
+
+/* Header container styling. Making it fixed at the top of the page. */
+.header {
+	background: #3f8048;
+	box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+/* Reseting the list styles. */
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+/* Navigation button styling. */
+.header ul a {
+	display: block;
+	padding: 20px;
+	border-right: 1px solid black;
+	text-decoration: none;
+	color: white;
+	transition: ease-out 0.3s;
+}
+
+/* Nav button hover effect. */
+.header ul a:hover {
+	transition: ease-in 0.3s;
+	background-color: #1db7bd;
+	border-radius: 1px;
+}
+
+/* Logo styling */
+.header .logo {
+	float: left;
+	display: block;
+	font-size: 2em;
+	padding: 10px 20px;
+	color: #ffffff;
+}
+
+/*  */
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+	padding: 28px 20px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+	background: #ffffff;
+	display: block;
+	height: 2px;
+	width: 18px;
+	position: relative;
+	transition: background 0.2s ease-out;
+}
+
+/* sudo elements for hamburger menu */
+.header .menu-icon .nav-icon:before {
+	background: #ffffff;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+	background: #ffffff;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all 0.2s ease-out;
+	top: -5px;
+}
+
+.header .menu-btn {
+	display: none;
+}
+
+/* Mobile menu max height for animation */
+.header .menu-btn:checked ~ .menu {
+	max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+	transform: rotate(+45deg);
+	top: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Showcase container */
+.showcase-container {
+	align-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+.showcase-container img {
+	max-width: 100%;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Availability Section */
