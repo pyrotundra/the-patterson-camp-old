@@ -11,10 +11,12 @@ body {
 	background-color: #1b231d;
 	padding: 0;
 	margin: 0;
+}
+
+.content-container {
 	background-image: url("/assets/img/background.jpg");
 	background-size: cover;
 }
-
 /* Navigation Styling */
 /* Link text color to white */
 .header a {
@@ -141,6 +143,7 @@ body {
 /* Showcase container */
 .showcase-container {
 	align-content: center;
+	background-color: black;
 }
 /* Hide the images by default */
 .mySlides {
@@ -154,9 +157,9 @@ body {
 /* Fading animation */
 .fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 2s;
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
