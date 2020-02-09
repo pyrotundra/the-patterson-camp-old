@@ -182,7 +182,8 @@ body {
 
 /* Availability Section */
 
-.availability-container {
-	display: grid;
+.content-container {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }

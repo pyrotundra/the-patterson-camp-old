@@ -34,43 +34,36 @@
 }
 
 /* *Iframe styling */
-@media (max-width: 860px) {
-	iframe {
-		width: 600px;
-		height: 550px;
-		align-self: center;
-		border: none;
+@media (max-width: 840px) {
+	#yearly-view {
+		display: none;
+	}
+	.availability-container {
+		width: 620px;
+		margin: auto;
 	}
 }
-@media (max-width: 630px) {
-	iframe {
-		width: 450px;
-		height: 400px;
-		align-self: center;
-		border: none;
+
+@media (min-width: 839px) {
+	#monthly-view {
+		display: none;
+	}
+	.availability-container {
+		width: 823px;
 	}
 }
-@media (max-width: 450px) {
-	iframe {
-		width: 400px;
-		height: 350px;
-		align-self: center;
-		border: none;
+
+@media (max-width: 620px) {
+	#monthly-view {
+		display: none;
+	}
+	.availability-container {
+		width: 205px;
 	}
 }
-@media (max-width: 380px) {
-	iframe {
-		width: 350px;
-		height: 300px;
-		align-self: center;
-		border: none;
-	}
-}
-@media (max-width: 360px) {
-	iframe {
-		width: 300px;
-		height: 250px;
-		align-self: center;
-		border: none;
+
+@media (min-width: 620px) {
+	#one-month-view {
+		display: none;
 	}
 }
