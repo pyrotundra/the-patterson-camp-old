@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://use.typekit.net/zjf3apo.css" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<!-- Local Styles -->
 		<link rel="stylesheet" href="./assets/css/styles.css" />
@@ -25,7 +26,7 @@
 			<!-- Navigation Links to content sections -->
 			<ul class="menu">
 				<li><a href="#showcase-container">Gallery</a></li>
-				<li><a href="#availability-wrapper">Book</a></li>
+				<li><a href="#availability-container">Book</a></li>
 				<li><a href="#info-wrapper">Info</a></li>
 				<li><a href="#history-wrapper">History</a></li>
 				<li><a href="#contact-wrapper">Contact</a></li>
@@ -49,14 +50,17 @@
 		</div>
 		<!-- ./Slideshow -->
 		<!-- * Availability -->
-		<div class="availability-container">
-			<iframe
-				src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YjRrNTRlNmJvNGYyazJoMmQzMmZwZmRlajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%236633CC&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
-				width="800"
-				height="600"
-				frameborder="0"
-				scrolling="no"
-			></iframe>
+		<!-- TODO: Confirm that a google calendar is how she wants to show availability for the website -->
+		<div id="availability-container" class="availability-container">
+			<div class="calendar-container">
+				<iframe
+					src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=YjRrNTRlNmJvNGYyazJoMmQzMmZwZmRlajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%236633CC&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+					width="800"
+					height="600"
+					frameborder="0"
+					scrolling="no"
+				></iframe>
+			</div>
 		</div>
 		<!-- ./Availability -->
 		<!-- TODO: Features section with info. Import from old project files. -->

@@ -5,22 +5,26 @@ html {
 
 /* Setting the font family and styling defaults */
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: zeitung, sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	background-color: #1b231d;
 	padding: 0;
 	margin: 0;
+	background-image: url("/assets/img/background.jpg");
+	background-size: auto;
 }
 
 /* Navigation Styling */
 /* Link text color to white */
 .header a {
-	color: white;
+	color: #f9c233;
 }
 
 /* Header container styling. Making it fixed at the top of the page. */
 .header {
-	background: #3f8048;
-	box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+	background: #211a28;
+	/* box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3); */
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -38,17 +42,17 @@ body {
 .header ul a {
 	display: block;
 	padding: 20px;
-	border-right: 1px solid black;
 	text-decoration: none;
-	color: white;
+	color: #f9c233;
 	transition: ease-out 0.3s;
+	font-weight: 100;
 }
 
 /* Nav button hover effect. */
 .header ul a:hover {
 	transition: ease-in 0.3s;
-	background-color: #1db7bd;
-	border-radius: 1px;
+	background-color: #705860;
+	color: white;
 }
 
 /* Logo styling */
@@ -56,8 +60,9 @@ body {
 	float: left;
 	display: block;
 	font-size: 2em;
-	padding: 10px 20px;
-	color: #ffffff;
+	padding: 8px 20px;
+	color: #f9c233;
+	text-decoration: none;
 }
 
 /*  */
@@ -75,7 +80,7 @@ body {
 }
 
 .header .menu-icon .nav-icon {
-	background: #ffffff;
+	background: #f9c233;
 	display: block;
 	height: 2px;
 	width: 18px;
@@ -85,7 +90,7 @@ body {
 
 /* sudo elements for hamburger menu */
 .header .menu-icon .nav-icon:before {
-	background: #ffffff;
+	background: #f9c233;
 	content: "";
 	display: block;
 	height: 100%;
@@ -96,7 +101,7 @@ body {
 }
 
 .header .menu-icon .nav-icon:after {
-	background: #ffffff;
+	background: #f9c233;
 	content: "";
 	display: block;
 	height: 100%;
