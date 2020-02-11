@@ -1,9 +1,14 @@
-/* Smooth Scroll */
+/* *RESET */
+* {
+	box-sizing: border-box;
+}
+
+/* * Smooth Scroll */
 html {
 	scroll-behavior: smooth;
 }
 
-/* Setting the font family and styling defaults */
+/* * Setting the font family and styling defaults */
 body {
 	font-family: zeitung, sans-serif;
 	font-weight: 300;
@@ -13,17 +18,18 @@ body {
 	margin: 0;
 }
 
-.content-container {
-	background-image: url("/assets/img/background.jpg");
-	background-size: cover;
+hr {
+	background-color: #346830;
+	border: 1px solid white;
+	border-radius: 10px;
 }
-/* Navigation Styling */
-/* Link text color to white */
+/* *Navigation Styling */
+/* *Link text color to white */
 .header a {
 	color: #f9c233;
 }
 
-/* Header container styling. Making it fixed at the top of the page. */
+/* *Header container styling. Making it fixed at the top of the page. */
 .header {
 	background: #211a28;
 	/* box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3); */
@@ -32,7 +38,7 @@ body {
 	z-index: 3;
 }
 
-/* Reseting the list styles. */
+/* *Reseting the list styles. */
 .header ul {
 	margin: 0;
 	padding: 0;
@@ -40,7 +46,7 @@ body {
 	overflow: hidden;
 }
 
-/* Navigation button styling. */
+/* *Navigation button styling. */
 .header ul a {
 	display: block;
 	padding: 20px;
@@ -50,14 +56,14 @@ body {
 	font-weight: 100;
 }
 
-/* Nav button hover effect. */
+/* *Nav button hover effect. */
 .header ul a:hover {
 	transition: ease-in 0.3s;
 	background-color: #705860;
 	color: white;
 }
 
-/* Logo styling */
+/* *Logo styling */
 .header .logo {
 	float: left;
 	display: block;
@@ -67,13 +73,14 @@ body {
 	text-decoration: none;
 }
 
-/*  */
+/* * Navigation buttons styling */
 .header .menu {
 	clear: both;
 	max-height: 0;
 	transition: max-height 0.2s ease-out;
 }
 
+/* Nav button styles */
 .header .menu-icon {
 	padding: 28px 20px;
 	position: relative;
@@ -81,6 +88,7 @@ body {
 	cursor: pointer;
 }
 
+/* * Hamburger styling */
 .header .menu-icon .nav-icon {
 	background: #f9c233;
 	display: block;
@@ -116,6 +124,7 @@ body {
 .header .menu-btn {
 	display: none;
 }
+/* ./hambuger menu btn styling */
 
 /* Mobile menu max height for animation */
 .header .menu-btn:checked ~ .menu {
@@ -134,10 +143,6 @@ body {
 .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
 	transform: rotate(+45deg);
 	top: 0;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 /* Showcase container */
@@ -180,10 +185,129 @@ body {
 	}
 }
 
-/* Availability Section */
+/* *CONTENT STYLING */
 
 .content-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	background-image: url("/assets/img/background.jpg");
+	background-size: cover;
+}
+
+.availability-container {
+	padding-top: 4em;
+	padding-bottom: 1em;
+}
+
+/* *Features Styling */
+.features-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	padding: 2em;
+	padding-top: 4em;
+}
+
+.features-container h3 {
+	color: #f9c233;
+}
+.features {
+	margin: 1em;
+	padding: 1em;
+	background-color: #705860;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.features ul {
+	padding: 0;
+}
+
+.features ul li {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+/* *Pricing styling */
+.pricing {
+	margin: 1em;
+	padding: 1em;
+	background-color: #705860;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+.pricing ul {
+	padding: 0;
+}
+
+.pricing ul li {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.history {
+	margin: 1em;
+	padding: 1em;
+	background-color: #705860;
+	color: white;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.history ul {
+	padding: 0;
+}
+.history ul li {
+	list-style: none;
+}
+.history ul li h5 {
+	font-style: italic;
+	color: #f9c233;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2em;
+	padding-top: 4em;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	flex: 33.3%;
+	max-width: 33.3%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
 }
