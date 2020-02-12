@@ -219,7 +219,7 @@ hr {
 .features {
 	margin: 1em;
 	padding: 1em;
-	background-color: #705860;
+	background-color: #64694a;
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -240,7 +240,7 @@ hr {
 .pricing {
 	margin: 1em;
 	padding: 1em;
-	background-color: #705860;
+	background-color: #64694a;
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -259,7 +259,7 @@ hr {
 .history {
 	margin: 1em;
 	padding: 1em;
-	background-color: #705860;
+	background-color: #64694a;
 	color: white;
 	border-radius: 5px;
 	width: 100%;
@@ -310,4 +310,51 @@ hr {
 		flex: 100%;
 		max-width: 100%;
 	}
+}
+
+.contact-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+	padding-top: 4em;
+}
+
+.contact {
+	background-color: #4f4a69;
+	color: white;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	padding: 2em;
+}
+
+@media (min-width: 1000px) {
+	.contact {
+		width: 400px;
+	}
+}
+
+.contact h1 {
+	font-size: 2rem;
+}
+.contact ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.contact ul li {
+	font-size: 1rem;
+	margin: 1em;
+}
+
+.contact ul li a {
+	background: white;
+	text-decoration: none;
+	color: blue;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
 }
